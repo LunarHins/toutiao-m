@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html lang="">
+    <head>
+       <script>
+'use strict'
+//实际上，arguments 最常用于判断传入参数的个数，
+//常看到这样的写法，foo(a[,b],c)
+//意思是接受2~3个参数，b是可选参数，如果只传2个参数，b默认null
+function foo(a,b,c){
+    //判断参数长度个数，
+    if(arguments.length===2){
+        //实际拿到的参数是a和b。c为undefined
+        
+        //于是把b的值赋值给c
+        c = b;
+        //我们需要把b设为默认null
+        b = null;
+
+    }
+}
+
+       </script>
+    </head>
+    <body>
+       
+    </body>
+</html>

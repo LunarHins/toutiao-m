@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="">
+    <head>
+       <script>
+'use strict'
+
+//arguments是一个关键字，函数内部才起作用
+//永远指向当前函数的调用者传入的所有参数，arguments类似array，但不是一个array
+//定义一个函数，打印出 参数的个数，以及参数的值。
+//打印出x=10，x= 写在括号里，"x="  10是参数，变量，用x代替。他们呢之间用+号链接。
+// 然后打印   参数的值，参数1值多少。
+// arg 1 = 10；
+// arg 2 = 30；
+// arg 3 = 15；
+//循环打印  打印出arguments[i]数组下标的值。
+function foo(x){
+    console.log('x='+x);
+    for(var i = 0;i<arguments.length;i++){
+        console.log("arg"+i+"="+arguments[i]);
+    }
+
+}
+
+foo(60,40,70,10);
+
+       </script>
+    </head>
+    <body>
+       
+    </body>
+</html>

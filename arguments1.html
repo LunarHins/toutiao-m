@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html lang="">
+    <head>
+       <script>
+'use strict'
+//利用arguments，你可以获得调用者传入的所有参数，即使函数不定义参数，还是可以拿到参数的值。
+//如何知道函数有没有参数，判断arguments的长度为0，arguments==0则没有参数
+//传入参数时，则返回其绝对值。
+function foo(){
+    if(arguments.length ===0){
+        return 0;
+        console.log('ww')
+
+    }
+    var x = arguments[0];
+    //这一步是为了把参数的第一个值赋值给x
+    return x>=0?x:-x;
+}
+
+       </script>
+    </head>
+    <body>
+       
+    </body>
+</html>
