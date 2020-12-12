@@ -1,5 +1,5 @@
 
-
+//导入模块。
 
 import Vue from 'vue'
 import App from './App.vue'
@@ -7,6 +7,19 @@ import router from './router'
 import store from './store'
 
 import  './styles/index.less'
+//加载vant组件库
+import Vant from 'vant'
+import 'vant/lib/index.css'
+//全局注册vant
+Vue.use(Vant);
+
+//引入第三方包。
+import 'amfe-flexible'
+
+
+
+
+
 
 Vue.config.productionTip = false
 
